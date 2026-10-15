@@ -177,7 +177,6 @@ h2{font-family:var(--m);font-weight:500;font-size:1.45rem;letter-spacing:.1em;li
  <div class="cp" id="bride"></div>
  <div class="amp gold">&amp;</div>
  <div class="cp" id="groom"></div>
- <p class="note" style="margin-top:14px"><span id="outro" style="font-style:italic;font-size:1.25rem;display:block;max-width:380px;color:var(--ivd)"></span></p>
 </section>
 
 <section class="sec auto rv" style="padding-top:20px">
@@ -206,7 +205,7 @@ h2{font-family:var(--m);font-weight:500;font-size:1.45rem;letter-spacing:.1em;li
  <svg class="div"><use href="#orn"/></svg>
  <div class="ty gold" id="ty" aria-label="Thank You"></div>
  <div class="ht gold">#KriSa</div>
- <p class="cl">Two hearts, two families, one beautiful beginning. We can't wait to celebrate with you.</p>
+ <p class="cl">Two Hearts, Two Families, One beautiful beginning.</p>
  <svg class="div"><use href="#orn"/></svg>
  <p class="lbl" style="margin-top:8px">Indani &amp; Toshniwal Families</p>
 </section>
@@ -219,9 +218,8 @@ h2{font-family:var(--m);font-weight:500;font-size:1.45rem;letter-spacing:.1em;li
 var CONFIG={
  brideName:"Saloni", groomName:"Krishna", groomFrontName:"Krishna",
  monogram:"S K",
- blessing:"With the blessings of Shree Ganesh and Shree Balaji, and the heartfelt wishes of our elders, the Indani and Toshniwal families joyfully invite you to bless the wedding of their beloved children.",
+ blessing:"With the blessings of Shree Ganesh, Shree Balaji and our elders, the Indani and Toshniwal families warmly invite you to celebrate the wedding of their beloved children. Your presence and blessings will add joy to this beautiful celebration.",
  quote:"Two hearts, one journey",
- outro:"Your presence and blessings would mean the world to our families.",
  bride:{edu:"D.T.L., MBA", rel:"Daughter of", parents:"Smt. Sunita & Adv. Mahendrakumarji Indani, Majalgaon"},
  groom:{edu:"C.A.", rel:"Son of", parents:"Smt. Santosh & Shri Sanjeevkumarji Toshniwal, Solapur"},
  /* countdown target = main muhurat (Akshata) */
@@ -229,8 +227,7 @@ var CONFIG={
  venueName:"Rajasthani Mangal Bhavan", venueAddr:"Power House Road, Majalgaon", venueQuery:"Rajasthani Mangal Bhavan Power House Road Majalgaon",
  /* icon: flower | sun | leaf | music | rings | kalash ;  big:true = highlighted gold card */
  events:[
-  {name:"Kunkum", icon:"flower", dateTime:"Tuesday, 24th Nov 2026 · 10:00 AM", venue:"'Madanprabha', Mangalnath Colony, Majalgaon", mapQuery:"Mangalnath Colony Majalgaon", dress:"Traditional attire", description:"The formal invitation ceremony, marking the beginning of the wedding festivities."},
-  {name:"Binayak Pujan", icon:"flower", dateTime:"Wednesday, 25th Nov 2026 · 7:00 AM", dress:"Traditional attire", description:"A prayer to Lord Ganesh, seeking his blessings for an auspicious and smooth celebration."},
+   {name:"Binayak Pujan", icon:"flower", dateTime:"Wednesday, 25th Nov 2026 · 7:30 AM", dress:"Traditional attire", description:"A prayer to Lord Ganesh, seeking his blessings for an auspicious and smooth celebration."},
   {name:"Be Kalash", icon:"kalash", dateTime:"Wednesday, 25th Nov 2026 · 10:00 AM", dress:"Traditional attire", description:"A sacred ritual with the holy kalash, performed with family elders."},
   {name:"Phoolon Ki Haldi", icon:"sun", dateTime:"Wednesday, 25th Nov 2026 · 11:30 AM", dress:"Pink attire", description:"A joyful haldi celebration with fresh flowers, turmeric, music and laughter."},
   {name:"Mamasa Ri Saugat", icon:"flower", dateTime:"Wednesday, 25th Nov 2026 · 3:00 PM", dress:"Traditional attire", description:"A heartwarming ritual where the maternal uncle presents gifts and blessings to the couple."},
@@ -253,7 +250,6 @@ $('gNames').innerHTML=esc(C.brideName)+'<i>&amp;</i>'+esc(C.groomFrontName);
 $('hNames').innerHTML=esc(C.brideName)+'<i>&amp;</i>'+esc(C.groomFrontName);
 $('blessing').textContent=C.blessing;
 $('quote').textContent='“'+C.quote+'”';
-$('outro').textContent=C.outro;
 function person(id,name,p){$(id).innerHTML='<h3 class="gold">'+esc(name)+'</h3><div class="ed">'+esc(p.edu)+'</div><small>'+esc(p.rel)+'</small><p>'+esc(p.parents)+'</p>'}
 person('bride',C.brideName,C.bride);person('groom',C.groomName,C.groom);
 $('cdLbl').textContent=C.muhuratLabel;
